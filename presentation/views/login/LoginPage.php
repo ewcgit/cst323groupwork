@@ -23,7 +23,7 @@ require_once "../../../Autoloader.php";
         <div class="row">
             <div class="col-md-6 login-left">
                 <h2>Login Form:</h2>
-                <form action="../../handlers/login/LogoutHandler.php" method="post">
+                <form action="../../handlers/login/LoginHandler.php" method="post">
                     <div class="form-group">
                         <label>Username</label>
                         <input type="text" name="username" id="username" class="form-control" required>

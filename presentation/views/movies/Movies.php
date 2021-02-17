@@ -9,6 +9,8 @@ $movies = $service->getAllMovies();
 <!DOCTYPE html>
 <html>
 <head>
+    <title>Movies</title>
+    <link rel="stylesheet" type="text/css" href="/style.css">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
             integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
 
@@ -49,7 +51,12 @@ $movies = $service->getAllMovies();
             text-align: center;
             font-family: Arial, Helvetica, sans-serif;
         }
+
+        body {
+            background-color: #d3d8dd;
+        }
     </style>
+    <center><img src="../../../images/logo.png" alt="Logo" width="200" height="200"></center>
 </head>
 <body>
 <h1>Movies</h1>
@@ -103,5 +110,9 @@ $movies = $service->getAllMovies();
             $('#movies').DataTable();
         });
     </script>
+
+    <footer>
+        <center>Copyright Fresh Apples 2021</center>
+    </footer>
 </body>
 </html>

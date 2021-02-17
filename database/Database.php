@@ -15,5 +15,4 @@ class Database
             return $conn;
         }
     }
-
 }

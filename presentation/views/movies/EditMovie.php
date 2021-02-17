@@ -12,7 +12,10 @@ $movie = $service->getMovieByID($movieID);
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>Edit Movie</title>
+    <link rel="stylesheet" type="text/css" href="/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
 
     <style>
         .inputForm {
@@ -23,12 +26,15 @@ $movie = $service->getMovieByID($movieID);
             text-align: center;
             font-family: Arial, Helvetica, sans-serif;
         }
+        body {
+            background-color: #d3d8dd;
+        }
 
 
 
     </style>
     <meta charset="UTF-8">
-    <title>Edit Movie</title>
+    <center><img src="../../../images/logo.png" alt="Logo" width="200" height="200"></center>
 </head>
 <body>
 <h1>Edit Movie</h1>
@@ -65,6 +71,8 @@ $movie = $service->getMovieByID($movieID);
     <button type="submit" class="btn btn-primary">Submit</button>
 </form>
 
-
+<footer>
+    <center>Copyright Fresh Apples 2021</center>
+</footer>
 </body>
 </html>

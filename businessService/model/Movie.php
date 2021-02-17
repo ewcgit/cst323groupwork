@@ -3,7 +3,7 @@
 
 class Movie
 {
-
+    private $id;
     private $title;
     private $director;
     private $rating;
@@ -12,19 +12,37 @@ class Movie
 
     /**
      * Movie constructor.
+     * @param $id
      * @param $title
      * @param $director
      * @param $rating
      * @param $yearMade
      * @param $genre
      */
-    public function __construct($title, $director, $rating, $yearMade, $genre)
+    public function __construct($id, $title, $director, $rating, $yearMade, $genre)
     {
+        $this->id = $id;
         $this->title = $title;
         $this->director = $director;
         $this->rating = $rating;
         $this->yearMade = $yearMade;
         $this->genre = $genre;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * @param mixed $id
+     */
+    public function setId($id)
+    {
+        $this->id = $id;
     }
 
     /**
@@ -106,7 +124,6 @@ class Movie
     {
         $this->genre = $genre;
     }
-
 
 
 }

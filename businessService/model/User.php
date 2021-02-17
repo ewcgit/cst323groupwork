@@ -3,6 +3,7 @@
 
 class User
 {
+    private $id;
     private $firstName;
     private $lastName;
     private $username;
@@ -10,17 +11,35 @@ class User
 
     /**
      * User constructor.
+     * @param $id
      * @param $firstName
      * @param $lastName
      * @param $username
      * @param $password
      */
-    public function __construct($firstName, $lastName, $username, $password)
+    public function __construct($id, $firstName, $lastName, $username, $password)
     {
+        $this->id = $id;
         $this->firstName = $firstName;
         $this->lastName = $lastName;
         $this->username = $username;
         $this->password = $password;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * @param mixed $id
+     */
+    public function setId($id)
+    {
+        $this->id = $id;
     }
 
     /**
@@ -86,7 +105,6 @@ class User
     {
         $this->password = $password;
     }
-
 
 
 }

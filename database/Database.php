@@ -2,10 +2,10 @@
 
 class Database
 {
-    private $dbservername = "";
-    private $dbusername = "";
-    private $dbpassword = "";
-    private $dbname = "";
+    private $dbservername = "localhost";
+    private $dbusername = "root";
+    private $dbpassword = "root";
+    private $dbname = "cst323clc";
 
     function getConnection(){
         $conn = new mysqli($this->dbservername, $this->dbusername, $this->dbpassword, $this->dbname);
